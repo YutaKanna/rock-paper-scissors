@@ -44,7 +44,7 @@
                                     <action selector="shuffleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hXQ-pA-SCu"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ba-Mz-M1y">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ba-Mz-M1y">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                             </imageView>
                         </subviews>
