@@ -40,6 +40,9 @@
                                 <state key="normal" title="じゃんけんをする！">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="shuffleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hXQ-pA-SCu"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ba-Mz-M1y">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
@@ -64,10 +67,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="answerImageView" destination="6Ba-Mz-M1y" id="fsg-WJ-9iu"/>
+                        <outlet property="answerLabel" destination="rCQ-vm-Eha" id="1M3-g0-sWs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1389.5999999999999" y="-581.55922038980509"/>
+            <point key="canvasLocation" x="1745" y="-584"/>
         </scene>
     </scenes>
 </document>
