@@ -18,36 +18,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ba-Mz-M1y">
-                                <rect key="frame" x="67" y="59" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5w-XN-5pV">
-                                <rect key="frame" x="78" y="481" width="219" height="77"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="これからじゃんけんをします！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCQ-vm-Eha">
+                                <rect key="frame" x="31" y="550" width="312.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="70w-Dj-9qt"/>
+                                    <constraint firstAttribute="width" constant="240" id="yom-Sg-mCX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5w-XN-5pV">
+                                <rect key="frame" x="0.0" y="590" width="375" height="77"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="2Rp-IH-ls7"/>
+                                    <constraint firstAttribute="width" constant="321" id="N3p-oo-Aoz"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="rei-8S-m8w"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="じゃんけんをする！">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="これからじゃんけんをします！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCQ-vm-Eha">
-                                <rect key="frame" x="72" y="270" width="230" height="127"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ba-Mz-M1y">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.3529411764705882" green="0.94901960784313721" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="r5w-XN-5pV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m17-NK-tC3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Ba-Mz-M1y" secondAttribute="trailing" id="A2V-t5-pXw"/>
+                            <constraint firstItem="6Ba-Mz-M1y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bv5-qN-JID"/>
+                            <constraint firstItem="r5w-XN-5pV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EpW-DZ-6z0"/>
+                            <constraint firstItem="rCQ-vm-Eha" firstAttribute="top" secondItem="6Ba-Mz-M1y" secondAttribute="bottom" id="HGK-WD-wI2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r5w-XN-5pV" secondAttribute="trailing" id="Lfa-EK-yEV"/>
+                            <constraint firstItem="rCQ-vm-Eha" firstAttribute="top" secondItem="6Ba-Mz-M1y" secondAttribute="bottom" constant="46" id="N5K-4q-vWX"/>
+                            <constraint firstItem="6Ba-Mz-M1y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OsU-9S-vw9"/>
+                            <constraint firstItem="6Ba-Mz-M1y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Pnw-HV-yIg"/>
+                            <constraint firstItem="rCQ-vm-Eha" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="baI-2m-pif"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rCQ-vm-Eha" secondAttribute="trailing" id="hYL-YG-Do9"/>
+                            <constraint firstItem="6Ba-Mz-M1y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nQR-7N-eHO"/>
+                            <constraint firstItem="r5w-XN-5pV" firstAttribute="top" secondItem="rCQ-vm-Eha" secondAttribute="bottom" id="qE5-zH-pye"/>
+                            <constraint firstItem="r5w-XN-5pV" firstAttribute="top" secondItem="rCQ-vm-Eha" secondAttribute="bottom" constant="118" id="sYZ-0g-bD0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="r5w-XN-5pV" secondAttribute="bottom" id="zOz-Rg-bGL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1389.5999999999999" y="-581.55922038980509"/>
         </scene>
     </scenes>
 </document>
