@@ -1,2 +1,2 @@
 # rock-paper-scissors
-Swiftお勉強用アプリ
+Swiftお勉強用アプリ第1弾
